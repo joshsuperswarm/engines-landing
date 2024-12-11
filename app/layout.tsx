@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Compute Time",
   openGraph: {
     title: "Compute Time",
-    description: "Compute Time"
+    description: "Compute Time",
     url: baseUrl,
     siteName: "Compute Time",
     locale: "en_US",
