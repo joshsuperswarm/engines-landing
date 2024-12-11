@@ -3,6 +3,15 @@ import { DM_Mono as Mono } from "next/font/google";
 
 const mono = Mono({ subsets: ["latin"], weight: ["400"] });
 
+const navItems = {
+  "/": {
+    name: "home",
+  },
+  "/blog": {
+    name: "blog",
+  },
+};
+
 export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
@@ -90,6 +99,23 @@ export default function Page() {
             </div>
           </section>
         </div>
+
+        {/* Bottom Navigation */}
+        <nav className="mt-24 max-w-3xl mx-auto">
+          <div className="pt-8">
+            {Object.entries(navItems).map(([path, { name }]) => {
+              return (
+                <Link
+                  key={path}
+                  href={path}
+                  className="font-mono text-sm md:text-base text-gray-600 hover:text-black transition-colors mr-4"
+                >
+                  {name}
+                </Link>
+              );
+            })}
+          </div>
+        </nav>
       </main>
     </div>
   );
