@@ -40,7 +40,7 @@ export default function Page() {
 
         {/* Subtitle */}
         <p className="text-left font-mono text-sm md:text-base text-gray-500 mb-12 max-w-3xl mx-auto">
-          tools, context and sandboxes for AI SWEs
+          Platform for AI SWEs
         </p>
 
         {/* Main Content */}
@@ -48,11 +48,10 @@ export default function Page() {
           {/* Mission Statement */}
           <section className="font-mono text-sm md:text-base leading-relaxed text-gray-900">
             <p>
-              Compute Time is scaling technology to produce cheap natural gas
-              with sunlight and air. We are committed to cutting the net CO2
-              flux from crust to atmosphere as quickly as possible. As solar
-              power gets cheaper, there will come a time when it is cheaper to
-              get carbon from the atmosphere than an oil well. That time is now.
+              Compute Time is building the best tools, context and sandboxes for
+              AI software engineering agents. AI SWEs will become a fundamental
+              part of every engineering organization. We are building the
+              foundational building blocks to make that reality.
             </p>
           </section>
 
