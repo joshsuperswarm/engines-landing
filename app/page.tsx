@@ -40,7 +40,7 @@ export default function Page() {
 
         {/* Subtitle */}
         <p className="text-left font-mono text-sm md:text-base text-gray-500 mb-12 max-w-3xl mx-auto">
-          Platform for AI SWEs
+          tools, context and sandboxes for AI SWEs
         </p>
 
         {/* Main Content */}
@@ -48,10 +48,10 @@ export default function Page() {
           {/* Mission Statement */}
           <section className="font-mono text-sm md:text-base leading-relaxed text-gray-900">
             <p>
-              Compute Time is building the best tools, context and sandboxes for
-              AI software engineering agents. AI SWEs will become a fundamental
-              part of every engineering organization. We are building the
-              foundational building blocks to make that reality.
+              Compute Time is building the best platform for AI software
+              engineering agents. AI SWEs will become a fundamental part of
+              every engineering organization. We are building the foundational
+              building blocks to make that reality.
             </p>
           </section>
 
