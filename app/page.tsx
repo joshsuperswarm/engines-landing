@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { DM_Mono as Mono } from "next/font/google";
+import { BlogPosts } from "app/components/posts";
 
 const mono = Mono({ subsets: ["latin"], weight: ["400"] });
 
@@ -7,8 +8,8 @@ const navItems = {
   "/": {
     name: "home",
   },
-  "/blog": {
-    name: "blog",
+  "https://twitter.com/jmvldz": {
+    name: "𝕏",
   },
 };
 
@@ -39,7 +40,7 @@ export default function Page() {
 
         {/* Subtitle */}
         <p className="text-left font-mono text-sm md:text-base text-gray-500 mb-12 max-w-3xl mx-auto">
-          gigascale atmospheric hydrocarbon synthesis
+          tools, context and sandboxes for AI SWEs
         </p>
 
         {/* Main Content */}
@@ -55,7 +56,11 @@ export default function Page() {
             </p>
           </section>
 
-          {/* Links */}
+          <section className="flex flex-col gap-4">
+            <BlogPosts />
+          </section>
+
+          {/* Links
           <section className="flex flex-col gap-4">
             <Link
               href="https://computetime.ai/product"
@@ -76,6 +81,7 @@ export default function Page() {
               Blog Posts
             </Link>
           </section>
+          */}
 
           {/* Updates Section
           <section className="space-y-6">
