@@ -77,7 +77,7 @@ export default function Page() {
             </Link>
           </section>
 
-          {/* Updates Section */}
+          {/* Updates Section
           <section className="space-y-6">
             <h2 className="font-mono text-lg md:text-xl text-gray-900">
               Latest Updates
@@ -98,6 +98,7 @@ export default function Page() {
               </div>
             </div>
           </section>
+          */}
         </div>
 
         {/* Bottom Navigation */}
