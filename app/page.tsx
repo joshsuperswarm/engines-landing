@@ -109,7 +109,7 @@ export default function Page() {
 
         {/* Bottom Navigation */}
         <nav className="mt-12 max-w-3xl mx-auto">
-          <div className="pt-8">
+          <div className="">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link
