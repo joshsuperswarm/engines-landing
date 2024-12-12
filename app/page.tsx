@@ -48,9 +48,9 @@ export default function Page() {
           {/* Mission Statement */}
           <section className="font-mono text-sm md:text-base leading-relaxed text-gray-900">
             <p>
-              Compute Time is building the best platform for AI software
-              engineering agents. AI SWEs will become a fundamental part of
-              every engineering organization. We are building the foundational
+              Compute Time is the best platform for AI software engineering
+              agents. AI SWEs will become a fundamental part of every
+              engineering organization. We are building the foundational
               building blocks to make that reality.
             </p>
           </section>
