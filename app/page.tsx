@@ -51,7 +51,7 @@ export default function Page() {
               Compute Time is the best platform for AI software engineering
               agents. AI SWEs will become a fundamental part of every
               engineering organization. We are building the foundational
-              building blocks to make that reality.
+              building blocks to make that a reality.
             </p>
           </section>
 
