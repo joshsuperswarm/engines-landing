@@ -22,7 +22,7 @@ export function BlogPosts() {
             href={`/blog/${post.slug}`}
           >
             <div className="w-full flex flex-col md:flex-row md:items-baseline">
-              <p className="font-mono text-sm md:text-base text-gray-600 w-[140px] shrink-0">
+              <p className="font-mono text-sm md:text-base text-gray-600 w-[190px] shrink-0">
                 {formatDate(post.metadata.publishedAt, false)}
               </p>
               <p className="font-mono text-sm md:text-base text-gray-600 hover:text-black transition-colors">
