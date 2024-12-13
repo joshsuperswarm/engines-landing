@@ -67,7 +67,7 @@ export default function Blog({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
+    <div className="min-h-screen bg-gradient-to-b from-white dark:from-gray-900 to-gray-50 dark:to-gray-800 text-gray-900 dark:text-gray-100">
       <main className="container mx-auto py-12 md:py-24">
         <div className="max-w-3xl mx-auto">
           <script
@@ -94,31 +94,31 @@ export default function Blog({ params }) {
           />
 
           {/* Title */}
-          <h1 className="font-mono text-2xl md:text-3xl text-gray-900 mb-2">
+          <h1 className="font-mono text-2xl md:text-3xl text-gray-900 dark:text-gray-100 mb-2">
             {post.metadata.title}
           </h1>
 
           {/* Date */}
           <div className="mb-8">
-            <p className="font-mono text-sm text-gray-500">
+            <p className="font-mono text-sm text-gray-500 dark:text-gray-400">
               {formatDate(post.metadata.publishedAt)}
             </p>
           </div>
 
           {/* Article Content */}
-          <article className="font-mono text-sm md:text-base leading-relaxed text-gray-900 prose prose-neutral max-w-none">
+          <article className="font-mono text-sm md:text-base leading-relaxed text-gray-900 dark:text-gray-100 prose prose-neutral dark:prose-invert max-w-none">
             <CustomMDX source={post.content} />
           </article>
 
           {/* Bottom Navigation */}
           <nav className="mt-12">
-            <div className="pt-8 border-t border-gray-200">
+            <div className="pt-8 border-t border-gray-200 dark:border-gray-700">
               {Object.entries(navItems).map(([path, { name }]) => {
                 return (
                   <Link
                     key={path}
                     href={path}
-                    className="font-mono text-sm md:text-base text-gray-600 hover:text-black transition-colors mr-4"
+                    className="font-mono text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors mr-4"
                   >
                     {name}
                   </Link>
