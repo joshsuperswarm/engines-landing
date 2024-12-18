@@ -55,13 +55,13 @@ export default function Page() {
           {/* Links
           <section className="flex flex-col gap-4">
             <Link
-              href="https://computetime.ai/product"
+              href="https://engines.dev/product"
               className="font-mono text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
             >
               Product Information
             </Link>
             <Link
-              href="https://computetime.ai/updates"
+              href="https://engines.dev/updates"
               className="font-mono text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
             >
               Updates
