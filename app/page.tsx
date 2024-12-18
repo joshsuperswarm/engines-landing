@@ -21,19 +21,12 @@ export default function Page() {
         <div className="max-w-3xl mx-auto">
           <h1 className="font-mono text-left whitespace-pre text-[0.5rem] leading-[0.5rem] sm:text-xs sm:leading-[0.75rem] md:text-sm md:leading-[0.875rem] mb-8 text-black dark:text-white">
             {`
-  ██████╗ ██████╗ ███╗   ███╗██████╗ ██╗   ██╗████████╗███████╗
- ██╔════╝██╔═══██╗████╗ ████║██╔══██╗██║   ██║╚══██╔══╝██╔════╝
- ██║     ██║   ██║██╔████╔██║██████╔╝██║   ██║   ██║   █████╗
- ██║     ██║   ██║██║╚██╔╝██║██╔═══╝ ██║   ██║   ██║   ██╔══╝
- ╚██████╗╚██████╔╝██║ ╚═╝ ██║██║     ╚██████╔╝   ██║   ███████╗
-  ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝      ╚═════╝    ╚═╝   ╚══════╝
-
- ████████╗██╗███╗   ███╗███████╗
- ╚══██╔══╝██║████╗ ████║██╔════╝
-    ██║   ██║██╔████╔██║█████╗
-    ██║   ██║██║╚██╔╝██║██╔══╝
-    ██║   ██║██║ ╚═╝ ██║███████╗
-    ╚═╝   ╚═╝╚═╝     ╚═╝╚══════╝
+███████╗███╗   ██╗ ██████╗ ██╗███╗   ██╗███████╗███████╗
+██╔════╝████╗  ██║██╔════╝ ██║████╗  ██║██╔════╝██╔════╝
+█████╗  ██╔██╗ ██║██║  ███╗██║██╔██╗ ██║█████╗  ███████╗
+██╔══╝  ██║╚██╗██║██║   ██║██║██║╚██╗██║██╔══╝  ╚════██║
+███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║███████╗███████║
+╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝
 `}
           </h1>
         </div>
@@ -48,10 +41,10 @@ export default function Page() {
           {/* Mission Statement */}
           <section className="font-mono text-sm md:text-base leading-relaxed text-gray-900 dark:text-gray-100">
             <p>
-              Compute Time is the best platform for AI software engineering
-              agents. AI SWEs will become a fundamental part of every
-              engineering organization. We are building the foundational
-              building blocks to make that a reality.
+              Engines is the best platform for AI software engineering agents.
+              AI SWEs will become a fundamental part of every engineering
+              organization. We are building the foundational building blocks to
+              make that a reality.
             </p>
           </section>
 
