@@ -39,12 +39,16 @@ export default function Page() {
         {/* Main Content */}
         <div className="max-w-3xl mx-auto space-y-12">
           {/* Mission Statement */}
-          <section className="font-mono text-sm md:text-base leading-relaxed text-gray-900 dark:text-gray-100">
+          <section className="font-mono text-sm md:text-base leading-relaxed text-gray-900 dark:text-gray-100 space-y-4">
             <p>
-              Engines is the best platform for AI software engineering agents.
-              AI SWEs will become a fundamental part of every engineering
-              organization. We are building the foundational building blocks to
-              make that a reality.
+              Engines is building infrastructure for AI software engineers:
+              sandboxes, code navigation, and evals.
+            </p>
+
+            <p>
+              AI software engineers will be a fundamental part of every
+              engineering organization. We are building the foundation to make
+              that a reality.
             </p>
           </section>
 
