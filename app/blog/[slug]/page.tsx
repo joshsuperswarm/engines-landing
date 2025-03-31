@@ -7,10 +7,7 @@ import Link from "next/link";
 const navItems = {
   "/": {
     name: "home",
-  },
-  "https://twitter.com/jmvldz": {
-    name: "𝕏",
-  },
+  }
 };
 
 export async function generateStaticParams() {
