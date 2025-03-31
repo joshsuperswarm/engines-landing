@@ -7,10 +7,7 @@ const mono = Mono({ subsets: ["latin"], weight: ["400"] });
 const navItems = {
   "/": {
     name: "home",
-  },
-  "https://twitter.com/jmvldz": {
-    name: "𝕏",
-  },
+  }
 };
 
 export default function Page() {
