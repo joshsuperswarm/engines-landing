@@ -1,42 +1,48 @@
-# Portfolio Blog Starter
+# Engines
 
-This is a porfolio site template complete with a blog. Includes:
+A modern portfolio and blog site for Engines, focused on AI software engineering tools, context, and sandboxes.
 
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
+## Features
+
+- Next.js 14 with App Router
+- MDX blog with syntax highlighting (via Sugar High)
+- SEO optimized (sitemap, robots.txt, JSON-LD schema)
+- RSS feed
 - Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
+- Tailwind CSS v4 for styling
+- Dark mode support
+- Vercel Analytics and Speed Insights
 - Geist font
+- Mobile responsive design
 
-## Demo
-
-https://portfolio-blog-starter.vercel.app
-
-## How to Use
-
-You can choose from one of the following two methods to use this repository:
-
-### One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
-
-### Clone and Deploy
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
+## Development
 
 ```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm run start
 ```
 
-Then, run Next.js in development mode:
+## Code Standards
 
-```bash
-pnpm dev
-```
+- TypeScript with strict null checks
+- Next.js linting: `npx next lint`
+- Type checking: `npx tsc --noEmit`
+- Tailwind CSS for styling
+- Function components with consistent naming conventions
 
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+## Deployment
+
+This project is optimized for deployment on Vercel.
+
+## License
+
+MIT
