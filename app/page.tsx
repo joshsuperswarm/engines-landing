@@ -32,23 +32,21 @@ export default function Page() {
         </div>
 
         {/* Subtitle */}
-        <p className="text-left font-mono text-sm md:text-base text-gray-500 dark:text-gray-400 mb-12 max-w-3xl mx-auto">
-          tools, context and sandboxes for AI SWEs
+        <p className="text-left font-mono text-sm md:text-base text-gray-500 dark:text-gray-400 mb-8 max-w-3xl mx-auto">
+          AI platform engineer
         </p>
 
         {/* Main Content */}
-        <div className="max-w-3xl mx-auto space-y-12">
+        <div className="max-w-3xl mx-auto space-y-8">
           {/* Mission Statement */}
           <section className="font-mono text-sm md:text-base leading-relaxed text-gray-900 dark:text-gray-100 space-y-4">
-            <p>
-              Engines is building infrastructure for AI software engineers:
-              sandboxes, code navigation, and evals.
-            </p>
+            <p>Engines is building an AI platform engineer.</p>
 
             <p>
-              AI software engineers will be a fundamental part of every
-              engineering organization. We are building the foundation to make
-              that a reality.
+              With Engines, you can effortlessly provide your AI SWE with
+              execution feedback. Engines can automatically containerize a
+              repository, setup complex CI/CD pipelines, and manage your AI SWE
+              sandboxes.
             </p>
           </section>
 
@@ -104,7 +102,7 @@ export default function Page() {
         </div>
 
         {/* Bottom Navigation */}
-        <nav className="mt-12 max-w-3xl mx-auto">
+        <nav className="mt-8 max-w-3xl mx-auto">
           <div className="">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
