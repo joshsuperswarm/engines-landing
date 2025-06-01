@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BlogPosts } from "app/components/posts";
+import WaitlistForm from "app/components/waitlist-form";
 
 export default function Page() {
   return (
@@ -61,12 +62,8 @@ export default function Page() {
               </a>
             </p>
             
-            {/* CTA Button */}
-            <div className="mb-8">
-              <button className="bg-white text-black px-6 py-3 text-sm font-medium hover:bg-gray-100 transition-colors duration-200">
-                Sign up for the waitlist
-              </button>
-            </div>
+            {/* Waitlist Form */}
+            <WaitlistForm />
             
             {/* Y Combinator Badge */}
             <div className="flex items-center gap-2 text-gray-400">
