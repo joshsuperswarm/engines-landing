@@ -5,6 +5,13 @@
   color: #fefefe;
 }
 
+html, body {
+  background-color: #1B1F24 !important;
+  color: #EAEAEA !important;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;

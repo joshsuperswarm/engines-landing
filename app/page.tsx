@@ -1,123 +1,88 @@
-import Link from "next/link";
-import { DM_Mono as Mono } from "next/font/google";
+import Image from "next/image";
 import { BlogPosts } from "app/components/posts";
-
-const mono = Mono({ subsets: ["latin"], weight: ["400"] });
-
-const navItems = {
-  "/": {
-    name: "home",
-  },
-  "https://twitter.com/jmvldz": {
-    name: "𝕏",
-  },
-};
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white dark:from-gray-900 to-gray-50 dark:to-gray-800 text-gray-900 dark:text-gray-100">
-      <main className="container mx-auto py-12 md:py-24">
-        {/* ASCII Art Title */}
-        <div className="max-w-3xl mx-auto">
-          <h1 className="font-mono text-left whitespace-pre text-[0.5rem] leading-[0.5rem] sm:text-xs sm:leading-[0.75rem] md:text-sm md:leading-[0.875rem] mb-8 text-black dark:text-white">
-            {`
-███████╗███╗   ██╗ ██████╗ ██╗███╗   ██╗███████╗███████╗
-██╔════╝████╗  ██║██╔════╝ ██║████╗  ██║██╔════╝██╔════╝
-█████╗  ██╔██╗ ██║██║  ███╗██║██╔██╗ ██║█████╗  ███████╗
-██╔══╝  ██║╚██╗██║██║   ██║██║██║╚██╗██║██╔══╝  ╚════██║
-███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║███████╗███████║
-╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝
-`}
-          </h1>
-        </div>
-
-        {/* Subtitle */}
-        <p className="text-left font-mono text-sm md:text-base text-gray-500 dark:text-gray-400 mb-8 max-w-3xl mx-auto">
-          AI platform engineer
-        </p>
-
-        {/* Main Content */}
-        <div className="max-w-3xl mx-auto space-y-8">
-          {/* Mission Statement */}
-          <section className="font-mono text-sm md:text-base leading-relaxed text-gray-900 dark:text-gray-100 space-y-4">
-            <p>Engines is building an AI platform engineer.</p>
-
-            <p>
-              With Engines, you can effortlessly provide your AI SWE with
-              execution feedback. Engines can automatically containerize a
-              repository, setup complex CI/CD pipelines, and manage your AI SWE
-              sandboxes.
-            </p>
-          </section>
-
-          <section className="flex flex-col gap-4">
-            <BlogPosts />
-          </section>
-
-          {/* Links
-          <section className="flex flex-col gap-4">
-            <Link
-              href="https://engines.dev/product"
-              className="font-mono text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
-            >
-              Product Information
-            </Link>
-            <Link
-              href="https://engines.dev/updates"
-              className="font-mono text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
-            >
-              Updates
-            </Link>
-            <Link
-              href="/blog"
-              className="font-mono text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
-            >
-              Blog Posts
-            </Link>
-          </section>
-          */}
-
-          {/* Updates Section
-          <section className="space-y-6">
-            <h2 className="font-mono text-lg md:text-xl text-gray-900 dark:text-gray-100">
-              Latest Updates
-            </h2>
-            <div className="space-y-4">
-              <div className="font-mono text-sm md:text-base text-gray-600 dark:text-gray-400">
-                <span className="text-black dark:text-white font-bold">August 2024:</span> We
-                have recently raised &lt;$15m (and counting) to accelerate
-                development and deployment of the first full scale 1 MW Compute
-                Time units. We also added new team members to accelerate our
-                progress.
-              </div>
-              <div className="font-mono text-sm md:text-base text-gray-600 dark:text-gray-400">
-                <span className="text-black dark:text-white font-bold">July 2024:</span> We
-                hired key positions in our DAC program and chemical process
-                controls. Our electrolyzer team is making excellent progress
-                setting up the StarLine solar production line.
+    <div className="min-h-screen bg-[#1B1F24] text-[#EAEAEA] font-sans">
+      {/* Video Section - Full Width at Top */}
+      <div className="w-full px-8 pt-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="w-full aspect-video relative overflow-hidden rounded-lg">
+            <Image 
+              src="/video-thumbnail.png" 
+              alt="CLI Setup Flow" 
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-16 h-16 bg-black/50 border-2 border-white/80 rounded-full flex items-center justify-center hover:bg-black/70 transition-colors cursor-pointer">
+                <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
               </div>
             </div>
-          </section>
-          */}
-        </div>
-
-        {/* Bottom Navigation */}
-        <nav className="mt-8 max-w-3xl mx-auto">
-          <div className="">
-            {Object.entries(navItems).map(([path, { name }]) => {
-              return (
-                <Link
-                  key={path}
-                  href={path}
-                  className="font-mono text-sm md:text-base text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors mr-4"
-                >
-                  {name}
-                </Link>
-              );
-            })}
           </div>
-        </nav>
-      </main>
+        </div>
+      </div>
+
+      {/* Logo and Content Section */}
+      <div className="flex justify-center min-h-[60vh] px-8 py-16">
+        <div className="max-w-4xl mx-auto flex gap-16">
+          {/* Logo on Left */}
+          <div className="flex-shrink-0">
+            <Image 
+              src="/Engines Dev Logo Cropped.png" 
+              alt="Engines" 
+              width={400} 
+              height={400}
+              className=""
+            />
+          </div>
+          
+          {/* Content on Right */}
+          <div className="flex-1 max-w-2xl flex flex-col justify-start">
+            {/* Main headline */}
+            <h1 className="text-4xl lg:text-5xl font-light mb-6 leading-tight tracking-tight -mt-4">
+              Setup any repo with one command.
+            </h1>
+            
+            {/* Description */}
+            <p className="text-lg text-gray-400 mb-8 leading-relaxed font-light">
+              Engines is an AI platform engineer that containerizes codebases, runs setup scripts, and handles edge cases like missing env vars.{' '}
+              <a 
+                href="https://twitter.com/jmvldz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-gray-300 transition-colors"
+              >
+                <svg className="w-4 h-4 inline -translate-y-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+            </p>
+            
+            {/* CTA Button */}
+            <div className="mb-8">
+              <button className="bg-white text-black px-6 py-3 text-sm font-medium hover:bg-gray-100 transition-colors duration-200">
+                Sign up for the waitlist
+              </button>
+            </div>
+            
+            {/* Y Combinator Badge */}
+            <div className="flex items-center gap-2 text-gray-400">
+              <span className="text-sm font-light">Backed by</span>
+              <Image 
+                src="/Y Combinator.svg" 
+                alt="Y Combinator" 
+                width={120} 
+                height={30}
+                className="opacity-80"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }

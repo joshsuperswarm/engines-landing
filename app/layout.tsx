@@ -47,13 +47,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        "text-black bg-white dark:text-white dark:bg-black",
         GeistSans.variable,
         GeistMono.variable,
       )}
     >
-      <body className="antialiased">
-        <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0">
+      <body className="antialiased bg-[#1B1F24] text-[#EAEAEA]">
+        <main className="flex-auto min-w-0 flex flex-col">
           {children}
           <Analytics />
           <SpeedInsights />
