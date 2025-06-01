@@ -13,6 +13,7 @@ export default function Page() {
               src="/video-thumbnail.png" 
               alt="CLI Setup Flow" 
               fill
+              priority
               className="object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -36,6 +37,7 @@ export default function Page() {
               alt="Engines" 
               width={400} 
               height={400}
+              priority
               className=""
             />
           </div>
