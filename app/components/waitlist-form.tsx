@@ -17,9 +17,9 @@ export default function WaitlistForm() {
     );
   }
 
-  const handleJoinWaitlist = (e: React.MouseEvent) => {
+  const handleJoinLimitedBeta = (e: React.MouseEvent) => {
     e.preventDefault();
-    console.log('Join waitlist clicked'); // Debug log
+    console.log('Join limited beta clicked'); // Debug log
     setShowEmailField(true);
   };
 
@@ -27,11 +27,11 @@ export default function WaitlistForm() {
     <div className="mb-8">
       {!showEmailField ? (
         <button 
-          onClick={handleJoinWaitlist}
+          onClick={handleJoinLimitedBeta}
           type="button"
           className="bg-white text-black px-6 py-3 text-sm font-medium hover:bg-gray-100 transition-colors duration-200 cursor-pointer"
         >
-          Join Waitlist
+          Join Beta
         </button>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
