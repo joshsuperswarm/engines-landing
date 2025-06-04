@@ -8,21 +8,17 @@ export default function Page() {
       {/* Video Section - Full Width at Top */}
       <div className="w-full px-8 pt-16">
         <div className="max-w-4xl mx-auto">
-          <div className="w-full aspect-video relative overflow-hidden rounded-lg">
-            <Image 
-              src="/video-thumbnail.png" 
-              alt="CLI Setup Flow" 
-              fill
-              priority
-              className="object-cover"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-16 h-16 bg-black/50 border-2 border-white/80 rounded-full flex items-center justify-center hover:bg-black/70 transition-colors cursor-pointer">
-                <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
+          <div className="w-full rounded-lg overflow-hidden">
+            <div style={{padding:'56.25% 0 0 0',position:'relative'}}>
+              <iframe 
+                src="https://player.vimeo.com/video/1090300973?h=a1240f2094&badge=0&autopause=0&player_id=0&app_id=58479&muted=0" 
+                frameBorder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
+                style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} 
+                title="Engines Demo"
+              />
             </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
         </div>
       </div>
