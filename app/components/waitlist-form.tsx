@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function WaitlistForm() {
   const [state, handleSubmit] = useForm("mgvyewbl");
   const [showEmailField, setShowEmailField] = useState(false);
-  
+
   if (state.succeeded) {
     return (
       <div className="mb-8">
@@ -19,25 +19,28 @@ export default function WaitlistForm() {
 
   const handleJoinLimitedBeta = (e: React.MouseEvent) => {
     e.preventDefault();
-    console.log('Join limited beta clicked'); // Debug log
+    console.log("Join limited beta clicked"); // Debug log
     setShowEmailField(true);
   };
 
   return (
     <div className="mb-8">
       {!showEmailField ? (
-        <button 
+        <button
           onClick={handleJoinLimitedBeta}
           type="button"
           className="bg-white text-black px-6 py-3 text-sm font-medium hover:bg-gray-100 transition-colors duration-200 cursor-pointer"
         >
-          Join Beta
+          Join the Beta
         </button>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-          <div className="flex gap-2 opacity-0 animate-fadeIn" style={{
-            animation: 'fadeIn 0.3s ease-in-out forwards'
-          }}>
+          <div
+            className="flex gap-2 opacity-0 animate-fadeIn"
+            style={{
+              animation: "fadeIn 0.3s ease-in-out forwards",
+            }}
+          >
             <input
               id="email"
               type="email"
@@ -47,16 +50,16 @@ export default function WaitlistForm() {
               autoFocus
               className="flex-1 px-4 py-3 text-sm bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-gray-500 transition-colors"
             />
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               disabled={state.submitting}
               className="bg-white text-black px-6 py-3 text-sm font-medium hover:bg-gray-100 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {state.submitting ? 'Signing Up...' : 'Sign Up'}
+              {state.submitting ? "Signing Up..." : "Sign Up"}
             </button>
           </div>
-          <ValidationError 
-            prefix="Email" 
+          <ValidationError
+            prefix="Email"
             field="email"
             errors={state.errors}
             className="text-red-400 text-xs"
