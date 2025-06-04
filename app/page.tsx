@@ -11,7 +11,7 @@ export default function Page() {
           <div className="w-full rounded-lg overflow-hidden">
             <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
               <iframe
-                src="https://player.vimeo.com/video/1090309429?h=f2d93fe992&badge=0&autopause=0&player_id=0&app_id=58479&muted=0"
+                src="https://player.vimeo.com/video/1090316858?h=d17589e1ab&badge=0&autopause=0&player_id=0&app_id=58479&muted=0"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                 style={{
