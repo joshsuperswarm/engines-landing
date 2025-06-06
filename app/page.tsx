@@ -6,10 +6,10 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-[#1B1F24] text-[#EAEAEA] font-sans">
       {/* Video Section - Full Width at Top */}
-      <div className="w-full px-8 pt-16">
-        <div className="max-w-4xl mx-auto">
+      <div className="w-full px-8 pt-8">
+        <div className="max-w-3xl mx-auto">
           <div className="w-full rounded-lg overflow-hidden">
-            <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+            <div style={{ padding: "50% 0 0 0", position: "relative" }}>
               <iframe
                 src="https://player.vimeo.com/video/1090329768?h=a0ea69c02d&badge=0&autopause=0&player_id=0&app_id=58479&muted=0"
                 frameBorder="0"
@@ -30,7 +30,7 @@ export default function Page() {
       </div>
 
       {/* Logo and Content Section */}
-      <div className="flex justify-center min-h-[60vh] px-8 py-16">
+      <div className="flex justify-center min-h-[50vh] px-8 py-8">
         <div className="max-w-4xl mx-auto">
           {/* Desktop Layout: Logo on Left, Content on Right */}
           <div className="hidden md:flex gap-16">
