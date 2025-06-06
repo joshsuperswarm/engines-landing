@@ -11,14 +11,14 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Engines",
+    default: "Engines – AI Platform Engineer",
     template: "%s | Engines",
   },
-  description: "Engines is an AI platform engineer that containerizes codebases, debugs Terraform code, and helps you get complex monorepos setup.",
+  description: "We containerize your repo so AI agents can run it.",
   openGraph: {
-    title: "Engines",
-    description: "Engines is an AI platform engineer that containerizes codebases, debugs Terraform code, and helps you get complex monorepos setup.",
-    url: baseUrl,
+    title: "Engines – AI Platform Engineer",
+    description: "We containerize your repo so AI agents can run it.",
+    url: "https://engines.dev",
     siteName: "Engines",
     locale: "en_US",
     type: "website",
@@ -27,9 +27,15 @@ export const metadata: Metadata = {
         url: "/Engines Logo Square.png",
         width: 1200,
         height: 1200,
-        alt: "Engines Logo",
+        alt: "Engines – AI Platform Engineer",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Engines – AI Platform Engineer",
+    description: "We containerize your repo so AI agents can run it.",
+    images: ["/Engines Logo Square.png"],
   },
   robots: {
     index: true,
