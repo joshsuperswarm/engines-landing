@@ -14,22 +14,14 @@ export const metadata: Metadata = {
     default: "Engines",
     template: "%s | Engines",
   },
-  description: "Setup any repo with one command. Engines is an AI platform engineer that containerizes codebases, debugs Terraform code, and helps you get complex monorepos setup.",
+  description: "Engines",
   openGraph: {
     title: "Engines",
-    description: "Setup any repo with one command. Engines is an AI platform engineer that containerizes codebases, debugs Terraform code, and helps you get complex monorepos setup.",
+    description: "Engines",
     url: baseUrl,
     siteName: "Engines",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/Engines Dev Logo Display 3.png",
-        width: 1200,
-        height: 630,
-        alt: "Engines - Setup any repo with one command",
-      },
-    ],
   },
   robots: {
     index: true,
