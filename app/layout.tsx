@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/Engines Logo Square.png",
+        url: "/og-image.png",
         width: 1200,
         height: 1200,
         alt: "Engines – AI Platform Engineer",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Engines – AI Platform Engineer",
     description: "We containerize your repo so AI agents can run it.",
-    images: ["/Engines Logo Square.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
