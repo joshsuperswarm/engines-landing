@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BlogPosts } from "app/components/posts";
-import WaitlistForm from "app/components/waitlist-form";
+// import WaitlistForm from "app/components/waitlist-form";
 
 export default function Page() {
   return (
@@ -11,9 +11,10 @@ export default function Page() {
           <div className="w-full rounded-lg overflow-hidden">
             <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
               <iframe
-                src="https://player.vimeo.com/video/1090329768?h=a0ea69c02d&badge=0&autopause=0&player_id=0&app_id=58479&muted=0"
+                src="https://player.vimeo.com/video/1106239764?badge=0&autopause=0&player_id=0&app_id=58479"
                 frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
                 style={{
                   position: "absolute",
                   top: 0,
@@ -21,7 +22,7 @@ export default function Page() {
                   width: "100%",
                   height: "100%",
                 }}
-                title="Engines Demo"
+                title="Engines Demo Final Final"
               />
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
@@ -55,9 +56,8 @@ export default function Page() {
 
               {/* Description */}
               <p className="text-lg text-gray-400 mb-8 leading-relaxed font-light">
-                Engines is an AI platform engineer that containerizes codebases,
-                debugs Terraform code, and helps you get complex monorepos
-                setup.{" "}
+                We've made the decision to shut Engines down. See what we're up
+                to now on{" "}
                 <a
                   href="https://twitter.com/jmvldz"
                   target="_blank"
@@ -76,7 +76,7 @@ export default function Page() {
               </p>
 
               {/* Waitlist Form */}
-              <WaitlistForm />
+              {/* <WaitlistForm /> */}
 
               {/* Y Combinator Badge */}
               <div className="flex items-center gap-2 text-gray-400">
@@ -115,9 +115,8 @@ export default function Page() {
 
               {/* Description */}
               <p className="text-base text-gray-400 mb-8 leading-relaxed font-light">
-                Engines is an AI platform engineer that containerizes codebases,
-                debugs Terraform code, and helps you get complex monorepos
-                setup.{" "}
+                We've made the decision to shut Engines down. See what we're up
+                to now on{" "}
                 <a
                   href="https://twitter.com/jmvldz"
                   target="_blank"
@@ -136,9 +135,9 @@ export default function Page() {
               </p>
 
               {/* Waitlist Form */}
-              <div className="mb-8">
+              {/* <div className="mb-8">
                 <WaitlistForm />
-              </div>
+              </div> */}
 
               {/* Y Combinator Badge */}
               <div className="flex items-center gap-2 text-gray-400">
