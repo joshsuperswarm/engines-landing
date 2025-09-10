@@ -53,6 +53,11 @@ export default function Page() {
               <h1 className="text-4xl md:text-5xl font-light mb-6 leading-tight tracking-tight -mt-4">
                 Setup any repo with one command.
               </h1>
+              
+              {/* Duck */}
+              <div className="text-6xl mb-6">
+                🦆
+              </div>
 
               {/* Description */}
               <p className="text-lg text-gray-400 mb-8 leading-relaxed font-light">
@@ -112,6 +117,11 @@ export default function Page() {
               <h1 className="text-3xl font-light mb-6 leading-tight tracking-tight">
                 Setup any repo with one command.
               </h1>
+              
+              {/* Duck */}
+              <div className="text-5xl mb-6">
+                🦆
+              </div>
 
               {/* Description */}
               <p className="text-base text-gray-400 mb-8 leading-relaxed font-light">
